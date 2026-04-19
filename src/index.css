@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-serif: "Georgia", serif;
+  
+  --color-brand-cyan: #00D1FF;
+  --color-editorial-bg: #0A0B0D;
+  --color-editorial-text: #F2F2F2;
+  --color-editorial-line: #333333;
+}
+
+@layer base {
+  body {
+    @apply bg-editorial-bg text-editorial-text font-sans antialiased;
+  }
+}
+
+.editorial-title {
+  @apply font-serif italic text-6xl md:text-[3.5rem] tracking-[-0.03em] leading-none;
+}
+
+.accent-text {
+  @apply text-brand-cyan font-mono uppercase tracking-[0.2em] text-[10px] md:text-xs;
+}
+
+.spm-display {
+  @apply text-[12rem] md:text-[22rem] font-thin leading-[0.8] tracking-[-0.05em];
+}
+
+.control-label {
+  @apply text-[10px] uppercase tracking-[0.15em] text-[#888] mb-2 block font-medium;
+}
+
+.glass-panel {
+  @apply bg-white/[0.03] border-l border-white/10;
+}
+
+.sound-pill {
+  @apply border border-[#444] px-5 py-3 rounded-full text-sm transition-all bg-transparent text-white text-center cursor-pointer;
+}
+
+.active-pill {
+  @apply bg-white text-black border-white;
+}
+
+.slider-track {
+  @apply w-full h-[2px] bg-editorial-line relative my-5;
+}
+
+.slider-thumb {
+  @apply w-3 h-3 bg-brand-cyan rounded-full absolute -top-1 shadow-[0_0_15px_rgba(0,209,255,0.5)];
+}
+
+.btn-primary {
+  @apply bg-brand-cyan text-black font-bold py-5 px-10 rounded-sm uppercase tracking-[0.1em] text-sm hover:opacity-90 transition-opacity;
+}
+
