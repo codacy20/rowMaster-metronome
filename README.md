@@ -1,21 +1,58 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# RowMaster Metronome
 
-# Run and deploy your AI Studio app
+A precision rowing metronome for athletes to master their stroke-per-minute (SPM) targets with customizable sounds and haptic feedback.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/f0d90900-c56c-4a26-bdfa-3ebc0d4ca112
+- **Precise SPM Control**: Select from 18 to 36 strokes per minute (common rowing cadences)
+- **Customizable Sounds**: Choose between beep, click, or wood block metronome sounds
+- **Haptic Feedback**: Vibration support on mobile devices for silent training
+- **Visual Beat Indicator**: Animated feedback synchronized with each stroke
+- **Responsive Design**: Works on desktop and mobile devices
 
-## Run Locally
+## Tech Stack
 
-**Prerequisites:**  Node.js
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS
+- Motion (for animations)
 
+## Development
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
-# rowMaster-metronome
+### Prerequisites
+
+- Node.js 20+
+
+### Setup
+
+```bash
+npm install
+```
+
+### Run locally
+
+```bash
+npm run dev
+```
+
+App runs at http://localhost:3000
+
+### Build
+
+```bash
+npm run build
+```
+
+## Docker
+
+Build and run with Docker:
+
+```bash
+docker build -t rowmaster-metronome .
+docker run -p 8080:80 rowmaster-metronome
+```
+
+## License
+
+Apache-2.0

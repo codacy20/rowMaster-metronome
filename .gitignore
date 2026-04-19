@@ -6,3 +6,13 @@ coverage/
 *.log
 .env*
 !.env.example
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Vite/TypeScript
+*.tsbuildinfo
+.cache/
