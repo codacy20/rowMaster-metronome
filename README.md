@@ -50,7 +50,7 @@ Build and run with Docker:
 
 ```bash
 docker build -t rowmaster-metronome .
-docker run -p 8080:80 rowmaster-metronome
+docker run -p 8080:3000 rowmaster-metronome
 ```
 
 ## License
